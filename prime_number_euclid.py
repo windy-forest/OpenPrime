@@ -19,6 +19,5 @@ while num < 1000000:
     if euclid(prod, num) == True:
         prime_list.append(num)
         prod *= num
-    
-
+        print(prime_list[-1])
 np.savetxt('prime_list_euclid_1000000.txt', prime_list, delimiter='\r\n', fmt='%d')
